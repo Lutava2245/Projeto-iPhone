@@ -1,30 +1,39 @@
-# Projeto
-Implementação de classes e métodos simulando um iPhone.
+# IPhone com IML
+Pequeno projeto para fortalecer conhecimentos com diagramas de classes.
 
-## Diagrama UML utilizando Mermaid
+## Tecnologias
+
+* Java 1.8
+* Mermaid
+
+## Diagrama UML
 ```mermaid
 classDiagram
     class iPhone {
     }
+
     class ReprodutorMusical {
     <<interface>>
         +tocar()
         +pausar()
         +selecionarMusica(String musica)
     }
+
     class AparelhoTelefonico {
     <<interface>>
         +ligar(String numero)
         +atender()
         +iniciarCorreioVoz()
     }
+
     class NavegadorInternet {
     <<interface>>
         +exibirPagina(String url)
         +adicionarNovaAba()
         +atualizarPagina()
     }
-    iPhone --> ReprodutorMusical
-    iPhone --> AparelhoTelefonico
-    iPhone --> NavegadorInternet
+
+    iPhone <|-- ReprodutorMusical
+    iPhone <|-- AparelhoTelefonico
+    iPhone <|-- NavegadorInternet
 ```

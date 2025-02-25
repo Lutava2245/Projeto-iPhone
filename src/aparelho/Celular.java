@@ -8,7 +8,7 @@ public class Celular implements ReprodutorMusical, AparelhoTelefonico, Navegador
 
     @Override
     public void exibirPagina(String url) {
-        System.out.println("Exibindo página da web "+url+" utilizando o Navegador de Internet.");
+        System.out.println("Exibindo página da web ".concat(url).concat(" utilizando o Navegador de Internet."));
     }
 
     @Override
@@ -23,7 +23,7 @@ public class Celular implements ReprodutorMusical, AparelhoTelefonico, Navegador
 
     @Override
     public void ligar(String numero) {
-        System.out.println("Ligando para o número "+numero+" no Aparelho Telefônico.");
+        System.out.println("Ligando para o número ".concat(numero).concat(" no Aparelho Telefônico."));
     }
 
     @Override
@@ -48,7 +48,7 @@ public class Celular implements ReprodutorMusical, AparelhoTelefonico, Navegador
 
     @Override
     public void selecionarMusica(String musica) {
-        System.out.println("Selecionando a música "+musica+" no Reprodutor Musical.");
+        System.out.println("Selecionando a música ".concat(musica).concat(" no Reprodutor Musical."));
     }
     
 }
